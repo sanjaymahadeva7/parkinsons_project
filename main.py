@@ -98,7 +98,7 @@ scaler = StandardScaler()
 input_df_scaled = scaler.fit_transform(input_df)
 
 def map_prediction(prediction):
-    return "Healthy" if prediction == 0 else "Parkinson's"
+    return "Healthy" if prediction == 1 else "Parkinson's"
 
 # Make predictions
 if st.button('Predict'):
